@@ -22,4 +22,6 @@
 @property (nonatomic, strong) IBOutlet UIImageView *onImageView;
 @property (nonatomic, strong) IBOutlet UIImageView *offImageView;
 
+-(void)torchOnIfNeeded;
+
 @end

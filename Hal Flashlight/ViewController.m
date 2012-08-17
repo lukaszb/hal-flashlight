@@ -76,4 +76,13 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+-(void)torchOnIfNeeded
+{
+    if (_offImageView.hidden)
+    {
+        // it is enabled (or should be)
+        [self setTorchEnabled:YES];
+    }
+}
+
 @end

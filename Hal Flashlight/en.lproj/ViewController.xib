@@ -36,22 +36,22 @@
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIImageView" id="960924087">
+					<object class="IBUIImageView" id="9213505">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">-2147483356</int>
 						<string key="NSFrameSize">{320, 460}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="30801853"/>
+						<reference key="NSNextKeyView" ref="672863757"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">PowerOn-hd.png</string>
+							<string key="NSResourceName">PowerOn@2x~iphone.png</string>
 						</object>
 					</object>
-					<object class="IBUIImageView" id="30801853">
+					<object class="IBUIImageView" id="672863757">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrameSize">{320, 460}</string>
@@ -63,7 +63,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">PowerOff-hd.png</string>
+							<string key="NSResourceName">PowerOff@2x~iphone.png</string>
 						</object>
 					</object>
 					<object class="IBUIButton" id="34784394">
@@ -83,7 +83,7 @@
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MQA</bytes>
 						</object>
-						<object class="NSColor" key="IBUINormalTitleColor" id="706628601">
+						<object class="NSColor" key="IBUINormalTitleColor" id="1049202504">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MCAwAA</bytes>
 						</object>
@@ -91,11 +91,11 @@
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC41AA</bytes>
 						</object>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="729194645">
+						<object class="IBUIFontDescription" key="IBUIFontDescription" id="741795804">
 							<int key="type">2</int>
 							<double key="pointSize">1</double>
 						</object>
-						<object class="NSFont" key="IBUIFont" id="683176520">
+						<object class="NSFont" key="IBUIFont" id="1060628921">
 							<string key="NSName">Helvetica-Bold</string>
 							<double key="NSSize">1</double>
 							<int key="NSfFlags">16</int>
@@ -115,16 +115,16 @@
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<string key="IBUINormalTitle">OFF</string>
 						<reference key="IBUIHighlightedTitleColor" ref="459461156"/>
-						<reference key="IBUINormalTitleColor" ref="706628601"/>
+						<reference key="IBUINormalTitleColor" ref="1049202504"/>
 						<reference key="IBUINormalTitleShadowColor" ref="68259860"/>
-						<reference key="IBUIFontDescription" ref="729194645"/>
-						<reference key="IBUIFont" ref="683176520"/>
+						<reference key="IBUIFontDescription" ref="741795804"/>
+						<reference key="IBUIFont" ref="1060628921"/>
 					</object>
 				</array>
 				<string key="NSFrame">{{0, 20}, {320, 460}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="960924087"/>
+				<reference key="NSNextKeyView" ref="9213505"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MC43NQA</bytes>
@@ -167,7 +167,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">onImageView</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="960924087"/>
+						<reference key="destination" ref="9213505"/>
 					</object>
 					<int key="connectionID">17</int>
 				</object>
@@ -175,7 +175,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">offImageView</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="30801853"/>
+						<reference key="destination" ref="672863757"/>
 					</object>
 					<int key="connectionID">18</int>
 				</object>
@@ -221,8 +221,8 @@
 						<int key="objectID">6</int>
 						<reference key="object" ref="774585933"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="960924087"/>
-							<reference ref="30801853"/>
+							<reference ref="9213505"/>
+							<reference ref="672863757"/>
 							<reference ref="34784394"/>
 							<reference ref="80032743"/>
 						</array>
@@ -240,12 +240,12 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">15</int>
-						<reference key="object" ref="960924087"/>
+						<reference key="object" ref="9213505"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">16</int>
-						<reference key="object" ref="30801853"/>
+						<reference key="object" ref="672863757"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 				</array>
@@ -326,8 +326,8 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="PowerOff-hd.png">{640, 960}</string>
-			<string key="PowerOn-hd.png">{640, 960}</string>
+			<string key="PowerOff@2x~iphone.png">{640, 960}</string>
+			<string key="PowerOn@2x~iphone.png">{640, 960}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">1498</string>
 	</data>

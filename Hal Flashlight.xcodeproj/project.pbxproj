@@ -19,7 +19,7 @@
 		B2BE508815DF06F100469532 /* PowerOff~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508415DF06F100469532 /* PowerOff~iphone.png */; };
 		B2BE508915DF06F100469532 /* PowerOff@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508515DF06F100469532 /* PowerOff@2x~iphone.png */; };
 		B2BE508A15DF06F100469532 /* PowerOn~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508615DF06F100469532 /* PowerOn~iphone.png */; };
-		B2BE508B15DF06F100469532 /* PowerOn@2x~iphone.png.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508715DF06F100469532 /* PowerOn@2x~iphone.png.png */; };
+		B2BE508B15DF06F100469532 /* PowerOn@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508715DF06F100469532 /* PowerOn@2x~iphone.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 		B2BE508415DF06F100469532 /* PowerOff~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PowerOff~iphone.png"; sourceTree = "<group>"; };
 		B2BE508515DF06F100469532 /* PowerOff@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PowerOff@2x~iphone.png"; sourceTree = "<group>"; };
 		B2BE508615DF06F100469532 /* PowerOn~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PowerOn~iphone.png"; sourceTree = "<group>"; };
-		B2BE508715DF06F100469532 /* PowerOn@2x~iphone.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PowerOn@2x~iphone.png.png"; sourceTree = "<group>"; };
+		B2BE508715DF06F100469532 /* PowerOn@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PowerOn@2x~iphone.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +117,7 @@
 				B2BE508415DF06F100469532 /* PowerOff~iphone.png */,
 				B2BE508515DF06F100469532 /* PowerOff@2x~iphone.png */,
 				B2BE508615DF06F100469532 /* PowerOn~iphone.png */,
-				B2BE508715DF06F100469532 /* PowerOn@2x~iphone.png.png */,
+				B2BE508715DF06F100469532 /* PowerOn@2x~iphone.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 				B2BE508815DF06F100469532 /* PowerOff~iphone.png in Resources */,
 				B2BE508915DF06F100469532 /* PowerOff@2x~iphone.png in Resources */,
 				B2BE508A15DF06F100469532 /* PowerOn~iphone.png in Resources */,
-				B2BE508B15DF06F100469532 /* PowerOn@2x~iphone.png.png in Resources */,
+				B2BE508B15DF06F100469532 /* PowerOn@2x~iphone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

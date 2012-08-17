@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController : UIViewController
+{
+    UIButton *_onButton;
+    UIButton *_offButton;
+    UIImageView *_onImageView;
+    UIImageView *_offImageView;
+}
+
+@property (nonatomic, strong) IBOutlet UIButton *onButton;
+@property (nonatomic, strong) IBOutlet UIButton *offButton;
+@property (nonatomic, strong) IBOutlet UIImageView *onImageView;
+@property (nonatomic, strong) IBOutlet UIImageView *offImageView;
 
 @end

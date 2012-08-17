@@ -15,6 +15,7 @@
 		B258CE8315DEDF3C0085C9F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B258CE8215DEDF3C0085C9F0 /* AppDelegate.m */; };
 		B258CE8615DEDF3C0085C9F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B258CE8515DEDF3C0085C9F0 /* ViewController.m */; };
 		B258CE8915DEDF3C0085C9F0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B258CE8715DEDF3C0085C9F0 /* ViewController.xib */; };
+		B258CE9015DEDF4A0085C9F0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B258CE8F15DEDF4A0085C9F0 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		B258CE8415DEDF3C0085C9F0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B258CE8515DEDF3C0085C9F0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B258CE8815DEDF3C0085C9F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		B258CE8F15DEDF4A0085C9F0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 				B258CE7315DEDF3C0085C9F0 /* UIKit.framework in Frameworks */,
 				B258CE7515DEDF3C0085C9F0 /* Foundation.framework in Frameworks */,
 				B258CE7715DEDF3C0085C9F0 /* CoreGraphics.framework in Frameworks */,
+				B258CE9015DEDF4A0085C9F0 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +70,7 @@
 		B258CE7115DEDF3C0085C9F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B258CE8F15DEDF4A0085C9F0 /* AVFoundation.framework */,
 				B258CE7215DEDF3C0085C9F0 /* UIKit.framework */,
 				B258CE7415DEDF3C0085C9F0 /* Foundation.framework */,
 				B258CE7615DEDF3C0085C9F0 /* CoreGraphics.framework */,
@@ -252,10 +256,12 @@
 		B258CE8E15DEDF3C0085C9F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lukasz Balcerzak (39GHJFL4SY)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hal Flashlight/Hal Flashlight-Prefix.pch";
 				INFOPLIST_FILE = "Hal Flashlight/Hal Flashlight-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "25F8D258-8CEA-42F2-A61D-86556C0AC18C";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -279,6 +285,7 @@
 				B258CE8E15DEDF3C0085C9F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

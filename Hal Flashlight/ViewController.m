@@ -14,6 +14,39 @@
 
 @implementation ViewController
 
+@synthesize onButton = _onButton;
+@synthesize offButton = _offButton;
+@synthesize onImageView = _onImageView;
+@synthesize offImageView = _offImageView;
+
+- (IBAction)torchOn:(id)sender
+{
+    [self setTorchEnabled:YES];
+}
+
+- (IBAction)torchOff:(id)sender
+{
+    [self setTorchEnabled:NO];
+}
+
+- (void)setTorchEnabled:(BOOL)enabled
+{
+    AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    if ([device isTorchAvailable] && [device isTorchModeSupported:AVCaptureTorchModeOn])
+    {
+        BOOL success = [device lockForConfiguration:nil];
+        if (success)
+        {
+            if (enabled) {
+                [device setTorchMode:AVCaptureTorchModeOn];
+            } else {
+                [device setTorchMode:AVCaptureTorchModeOff];
+            }
+            [device unlockForConfiguration];
+        }        
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

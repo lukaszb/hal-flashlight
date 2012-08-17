@@ -16,6 +16,10 @@
 		B258CE8615DEDF3C0085C9F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B258CE8515DEDF3C0085C9F0 /* ViewController.m */; };
 		B258CE8915DEDF3C0085C9F0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B258CE8715DEDF3C0085C9F0 /* ViewController.xib */; };
 		B258CE9015DEDF4A0085C9F0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B258CE8F15DEDF4A0085C9F0 /* AVFoundation.framework */; };
+		B2BE508815DF06F100469532 /* PowerOff.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508415DF06F100469532 /* PowerOff.png */; };
+		B2BE508915DF06F100469532 /* PowerOff-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508515DF06F100469532 /* PowerOff-hd.png */; };
+		B2BE508A15DF06F100469532 /* PowerOn.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508615DF06F100469532 /* PowerOn.png */; };
+		B2BE508B15DF06F100469532 /* PowerOn-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508715DF06F100469532 /* PowerOn-hd.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		B258CE8515DEDF3C0085C9F0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B258CE8815DEDF3C0085C9F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		B258CE8F15DEDF4A0085C9F0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B2BE508415DF06F100469532 /* PowerOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PowerOff.png; sourceTree = "<group>"; };
+		B2BE508515DF06F100469532 /* PowerOff-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PowerOff-hd.png"; sourceTree = "<group>"; };
+		B2BE508615DF06F100469532 /* PowerOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PowerOn.png; sourceTree = "<group>"; };
+		B2BE508715DF06F100469532 /* PowerOn-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PowerOn-hd.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		B258CE7815DEDF3C0085C9F0 /* Hal Flashlight */ = {
 			isa = PBXGroup;
 			children = (
+				B2BE508315DF06CE00469532 /* Images */,
 				B258CE8115DEDF3C0085C9F0 /* AppDelegate.h */,
 				B258CE8215DEDF3C0085C9F0 /* AppDelegate.m */,
 				B258CE8415DEDF3C0085C9F0 /* ViewController.h */,
@@ -100,6 +109,17 @@
 				B258CE8015DEDF3C0085C9F0 /* Hal Flashlight-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2BE508315DF06CE00469532 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B2BE508415DF06F100469532 /* PowerOff.png */,
+				B2BE508515DF06F100469532 /* PowerOff-hd.png */,
+				B2BE508615DF06F100469532 /* PowerOn.png */,
+				B2BE508715DF06F100469532 /* PowerOn-hd.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +175,10 @@
 			files = (
 				B258CE7D15DEDF3C0085C9F0 /* InfoPlist.strings in Resources */,
 				B258CE8915DEDF3C0085C9F0 /* ViewController.xib in Resources */,
+				B2BE508815DF06F100469532 /* PowerOff.png in Resources */,
+				B2BE508915DF06F100469532 /* PowerOff-hd.png in Resources */,
+				B2BE508A15DF06F100469532 /* PowerOn.png in Resources */,
+				B2BE508B15DF06F100469532 /* PowerOn-hd.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

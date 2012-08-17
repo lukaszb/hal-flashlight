@@ -21,11 +21,23 @@
 
 - (IBAction)torchOn:(id)sender
 {
+    _onButton.hidden = YES;
+    _offButton.hidden = NO;
+    
+    _onImageView.hidden = NO;
+    _offImageView.hidden = YES;
+    
     [self setTorchEnabled:YES];
 }
 
 - (IBAction)torchOff:(id)sender
 {
+    _onButton.hidden = NO;
+    _offButton.hidden = YES;
+    
+    _onImageView.hidden = YES;
+    _offImageView.hidden = NO;
+    
     [self setTorchEnabled:NO];
 }
 

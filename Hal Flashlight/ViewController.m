@@ -9,6 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+{
+    AVAudioPlayer *clickPlayer;
+}
 
 @end
 
@@ -19,6 +22,15 @@
 @synthesize onImageView = _onImageView;
 @synthesize offImageView = _offImageView;
 
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Click" ofType:@"wav"]];
+    clickPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    clickPlayer.delegate = self;
+    [clickPlayer prepareToPlay];
+}
+
 - (IBAction)torchOn:(id)sender
 {
     _onButton.hidden = YES;
@@ -28,6 +40,7 @@
     _offImageView.hidden = YES;
     
     [self setTorchEnabled:YES];
+    [self playSoundClick];
 }
 
 - (IBAction)torchOff:(id)sender
@@ -39,6 +52,7 @@
     _offImageView.hidden = NO;
     
     [self setTorchEnabled:NO];
+    [self playSoundClick];
 }
 
 - (void)setTorchEnabled:(BOOL)enabled
@@ -58,13 +72,6 @@
         }        
     }
 }
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -76,13 +83,23 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+-(BOOL)isTorchEnabled
+{
+    return _onImageView.hidden;
+}
+
 -(void)torchOnIfNeeded
 {
-    if (_offImageView.hidden)
+    if (![self isTorchEnabled])
     {
         // it is enabled (or should be)
         [self setTorchEnabled:YES];
     }
 }
 
+-(void)playSoundClick
+{
+    [clickPlayer play];
+}
+  
 @end

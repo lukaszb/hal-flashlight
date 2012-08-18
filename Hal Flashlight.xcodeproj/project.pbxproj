@@ -22,6 +22,7 @@
 		B2BE508B15DF06F100469532 /* PowerOn@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508715DF06F100469532 /* PowerOn@2x~iphone.png */; };
 		B2BE508D15DF22A600469532 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508C15DF22A600469532 /* Icon@2x.png */; };
 		B2BE508F15DF22D500469532 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508E15DF22D500469532 /* Icon.png */; };
+		B2BE509215DF252300469532 /* Click.wav in Resources */ = {isa = PBXBuildFile; fileRef = B2BE509115DF252300469532 /* Click.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		B2BE508715DF06F100469532 /* PowerOn@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PowerOn@2x~iphone.png"; sourceTree = "<group>"; };
 		B2BE508C15DF22A600469532 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		B2BE508E15DF22D500469532 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		B2BE509115DF252300469532 /* Click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Click.wav; path = ../Click.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		B258CE7815DEDF3C0085C9F0 /* Hal Flashlight */ = {
 			isa = PBXGroup;
 			children = (
+				B2BE509015DF24FF00469532 /* Sounds */,
 				B2BE508315DF06CE00469532 /* Images */,
 				B258CE8115DEDF3C0085C9F0 /* AppDelegate.h */,
 				B258CE8215DEDF3C0085C9F0 /* AppDelegate.m */,
@@ -126,6 +129,14 @@
 				B2BE508715DF06F100469532 /* PowerOn@2x~iphone.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		B2BE509015DF24FF00469532 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B2BE509115DF252300469532 /* Click.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +198,7 @@
 				B2BE508B15DF06F100469532 /* PowerOn@2x~iphone.png in Resources */,
 				B2BE508D15DF22A600469532 /* Icon@2x.png in Resources */,
 				B2BE508F15DF22D500469532 /* Icon.png in Resources */,
+				B2BE509215DF252300469532 /* Click.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

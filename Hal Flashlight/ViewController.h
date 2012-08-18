@@ -21,6 +21,9 @@
 @property (nonatomic, strong) IBOutlet UIButton *offButton;
 @property (nonatomic, strong) IBOutlet UIImageView *onImageView;
 @property (nonatomic, strong) IBOutlet UIImageView *offImageView;
+@property (nonatomic, strong) IBOutlet UIImageView *lockedImageView;
+@property (nonatomic, strong) IBOutlet UIImageView *unlockedImageView;
+@property (nonatomic) BOOL locked;
 
 -(void)torchOnIfNeeded;
 

@@ -23,6 +23,10 @@
 		B2BE508D15DF22A600469532 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508C15DF22A600469532 /* Icon@2x.png */; };
 		B2BE508F15DF22D500469532 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508E15DF22D500469532 /* Icon.png */; };
 		B2BE509215DF252300469532 /* Click.wav in Resources */ = {isa = PBXBuildFile; fileRef = B2BE509115DF252300469532 /* Click.wav */; };
+		B2BE509715DF2A6B00469532 /* lock~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE509315DF2A6B00469532 /* lock~iphone.png */; };
+		B2BE509815DF2A6B00469532 /* lock@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE509415DF2A6B00469532 /* lock@2x~iphone.png */; };
+		B2BE509915DF2A6B00469532 /* unlock~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE509515DF2A6B00469532 /* unlock~iphone.png */; };
+		B2BE509A15DF2A6B00469532 /* unlock@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE509615DF2A6B00469532 /* unlock@2x~iphone.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +51,10 @@
 		B2BE508C15DF22A600469532 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		B2BE508E15DF22D500469532 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		B2BE509115DF252300469532 /* Click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Click.wav; path = ../Click.wav; sourceTree = "<group>"; };
+		B2BE509315DF2A6B00469532 /* lock~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lock~iphone.png"; sourceTree = "<group>"; };
+		B2BE509415DF2A6B00469532 /* lock@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lock@2x~iphone.png"; sourceTree = "<group>"; };
+		B2BE509515DF2A6B00469532 /* unlock~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unlock~iphone.png"; sourceTree = "<group>"; };
+		B2BE509615DF2A6B00469532 /* unlock@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unlock@2x~iphone.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +129,10 @@
 		B2BE508315DF06CE00469532 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B2BE509315DF2A6B00469532 /* lock~iphone.png */,
+				B2BE509415DF2A6B00469532 /* lock@2x~iphone.png */,
+				B2BE509515DF2A6B00469532 /* unlock~iphone.png */,
+				B2BE509615DF2A6B00469532 /* unlock@2x~iphone.png */,
 				B2BE508E15DF22D500469532 /* Icon.png */,
 				B2BE508C15DF22A600469532 /* Icon@2x.png */,
 				B2BE508415DF06F100469532 /* PowerOff~iphone.png */,
@@ -199,6 +211,10 @@
 				B2BE508D15DF22A600469532 /* Icon@2x.png in Resources */,
 				B2BE508F15DF22D500469532 /* Icon.png in Resources */,
 				B2BE509215DF252300469532 /* Click.wav in Resources */,
+				B2BE509715DF2A6B00469532 /* lock~iphone.png in Resources */,
+				B2BE509815DF2A6B00469532 /* lock@2x~iphone.png in Resources */,
+				B2BE509915DF2A6B00469532 /* unlock~iphone.png in Resources */,
+				B2BE509A15DF2A6B00469532 /* unlock@2x~iphone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

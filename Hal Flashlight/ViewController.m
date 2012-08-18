@@ -21,6 +21,9 @@
 @synthesize offButton = _offButton;
 @synthesize onImageView = _onImageView;
 @synthesize offImageView = _offImageView;
+@synthesize lockedImageView = _lockedImageView;
+@synthesize unlockedImageView = _unlockedImageView;
+@synthesize locked = _locked;
 
 -(void)viewDidLoad
 {
@@ -29,6 +32,7 @@
     clickPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
     clickPlayer.delegate = self;
     [clickPlayer prepareToPlay];
+    _locked = NO;
 }
 
 - (IBAction)torchOn:(id)sender
@@ -45,6 +49,10 @@
 
 - (IBAction)torchOff:(id)sender
 {
+    if (_locked)
+    {
+        return;
+    }
     _onButton.hidden = NO;
     _offButton.hidden = YES;
     
@@ -102,4 +110,20 @@
     [clickPlayer play];
 }
   
+- (IBAction)onLockClick:(UIButton *)sender
+{
+    if (!_locked)
+    {
+        _locked = YES;
+        _lockedImageView.hidden = NO;
+        _unlockedImageView.hidden = YES;
+    }
+    else
+    {
+        _locked = NO;
+        _lockedImageView.hidden = YES;
+        _unlockedImageView.hidden = NO;
+    }
+}
+
 @end

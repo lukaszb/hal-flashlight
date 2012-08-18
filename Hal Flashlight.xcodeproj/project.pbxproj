@@ -20,6 +20,8 @@
 		B2BE508915DF06F100469532 /* PowerOff@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508515DF06F100469532 /* PowerOff@2x~iphone.png */; };
 		B2BE508A15DF06F100469532 /* PowerOn~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508615DF06F100469532 /* PowerOn~iphone.png */; };
 		B2BE508B15DF06F100469532 /* PowerOn@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508715DF06F100469532 /* PowerOn@2x~iphone.png */; };
+		B2BE508D15DF22A600469532 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508C15DF22A600469532 /* Icon@2x.png */; };
+		B2BE508F15DF22D500469532 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508E15DF22D500469532 /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		B2BE508515DF06F100469532 /* PowerOff@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PowerOff@2x~iphone.png"; sourceTree = "<group>"; };
 		B2BE508615DF06F100469532 /* PowerOn~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PowerOn~iphone.png"; sourceTree = "<group>"; };
 		B2BE508715DF06F100469532 /* PowerOn@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PowerOn@2x~iphone.png"; sourceTree = "<group>"; };
+		B2BE508C15DF22A600469532 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		B2BE508E15DF22D500469532 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 		B2BE508315DF06CE00469532 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B2BE508E15DF22D500469532 /* Icon.png */,
+				B2BE508C15DF22A600469532 /* Icon@2x.png */,
 				B2BE508415DF06F100469532 /* PowerOff~iphone.png */,
 				B2BE508515DF06F100469532 /* PowerOff@2x~iphone.png */,
 				B2BE508615DF06F100469532 /* PowerOn~iphone.png */,
@@ -179,6 +185,8 @@
 				B2BE508915DF06F100469532 /* PowerOff@2x~iphone.png in Resources */,
 				B2BE508A15DF06F100469532 /* PowerOn~iphone.png in Resources */,
 				B2BE508B15DF06F100469532 /* PowerOn@2x~iphone.png in Resources */,
+				B2BE508D15DF22A600469532 /* Icon@2x.png in Resources */,
+				B2BE508F15DF22D500469532 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

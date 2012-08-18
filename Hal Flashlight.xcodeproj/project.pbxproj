@@ -27,6 +27,8 @@
 		B2BE509815DF2A6B00469532 /* lock@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE509415DF2A6B00469532 /* lock@2x~iphone.png */; };
 		B2BE509915DF2A6B00469532 /* unlock~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE509515DF2A6B00469532 /* unlock~iphone.png */; };
 		B2BE509A15DF2A6B00469532 /* unlock@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE509615DF2A6B00469532 /* unlock@2x~iphone.png */; };
+		B2BE509C15DF315300469532 /* Locking.wav in Resources */ = {isa = PBXBuildFile; fileRef = B2BE509B15DF315200469532 /* Locking.wav */; };
+		B2BE509E15DF335500469532 /* Carlock.wav in Resources */ = {isa = PBXBuildFile; fileRef = B2BE509D15DF335500469532 /* Carlock.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		B2BE509415DF2A6B00469532 /* lock@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lock@2x~iphone.png"; sourceTree = "<group>"; };
 		B2BE509515DF2A6B00469532 /* unlock~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unlock~iphone.png"; sourceTree = "<group>"; };
 		B2BE509615DF2A6B00469532 /* unlock@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unlock@2x~iphone.png"; sourceTree = "<group>"; };
+		B2BE509B15DF315200469532 /* Locking.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Locking.wav; sourceTree = "<group>"; };
+		B2BE509D15DF335500469532 /* Carlock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Carlock.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +150,9 @@
 		B2BE509015DF24FF00469532 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				B2BE509D15DF335500469532 /* Carlock.wav */,
 				B2BE509115DF252300469532 /* Click.wav */,
+				B2BE509B15DF315200469532 /* Locking.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -215,6 +221,8 @@
 				B2BE509815DF2A6B00469532 /* lock@2x~iphone.png in Resources */,
 				B2BE509915DF2A6B00469532 /* unlock~iphone.png in Resources */,
 				B2BE509A15DF2A6B00469532 /* unlock@2x~iphone.png in Resources */,
+				B2BE509C15DF315300469532 /* Locking.wav in Resources */,
+				B2BE509E15DF335500469532 /* Carlock.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

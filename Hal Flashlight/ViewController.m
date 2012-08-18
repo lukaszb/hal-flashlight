@@ -11,6 +11,8 @@
 @interface ViewController ()
 {
     AVAudioPlayer *clickPlayer;
+    AVAudioPlayer *lockingPlayer;
+    AVAudioPlayer *unlockingPlayer;
 }
 
 @end
@@ -28,10 +30,23 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Click" ofType:@"wav"]];
+    NSURL *url;
+    
+    url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Click" ofType:@"wav"]];
     clickPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
     clickPlayer.delegate = self;
     [clickPlayer prepareToPlay];
+    
+    url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Locking" ofType:@"wav"]];
+    lockingPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    lockingPlayer.delegate = self;
+    [lockingPlayer prepareToPlay];
+    
+    url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Carlock" ofType:@"wav"]];
+    unlockingPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    unlockingPlayer.delegate = self;
+    [unlockingPlayer prepareToPlay];
+    
     _locked = NO;
 }
 
@@ -109,6 +124,11 @@
 {
     [clickPlayer play];
 }
+
+-(void)playSoundLocking
+{
+    [lockingPlayer play];
+}
   
 - (IBAction)onLockClick:(UIButton *)sender
 {
@@ -117,12 +137,14 @@
         _locked = YES;
         _lockedImageView.hidden = NO;
         _unlockedImageView.hidden = YES;
+        [lockingPlayer play];
     }
     else
     {
         _locked = NO;
         _lockedImageView.hidden = YES;
         _unlockedImageView.hidden = NO;
+        [unlockingPlayer play];
     }
 }
 

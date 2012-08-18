@@ -16,6 +16,7 @@
 		B258CE8615DEDF3C0085C9F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B258CE8515DEDF3C0085C9F0 /* ViewController.m */; };
 		B258CE8915DEDF3C0085C9F0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B258CE8715DEDF3C0085C9F0 /* ViewController.xib */; };
 		B258CE9015DEDF4A0085C9F0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B258CE8F15DEDF4A0085C9F0 /* AVFoundation.framework */; };
+		B265617B15DFE4270026087B /* README.rst in Resources */ = {isa = PBXBuildFile; fileRef = B265617A15DFE4270026087B /* README.rst */; };
 		B2BE508815DF06F100469532 /* PowerOff~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508415DF06F100469532 /* PowerOff~iphone.png */; };
 		B2BE508915DF06F100469532 /* PowerOff@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508515DF06F100469532 /* PowerOff@2x~iphone.png */; };
 		B2BE508A15DF06F100469532 /* PowerOn~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE508615DF06F100469532 /* PowerOn~iphone.png */; };
@@ -47,6 +48,7 @@
 		B258CE8515DEDF3C0085C9F0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B258CE8815DEDF3C0085C9F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		B258CE8F15DEDF4A0085C9F0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B265617A15DFE4270026087B /* README.rst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.rst; sourceTree = "<group>"; };
 		B2BE508415DF06F100469532 /* PowerOff~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PowerOff~iphone.png"; sourceTree = "<group>"; };
 		B2BE508515DF06F100469532 /* PowerOff@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PowerOff@2x~iphone.png"; sourceTree = "<group>"; };
 		B2BE508615DF06F100469532 /* PowerOn~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PowerOn~iphone.png"; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		B258CE6315DEDF3C0085C9F0 = {
 			isa = PBXGroup;
 			children = (
+				B265617A15DFE4270026087B /* README.rst */,
 				B2BE509F15DFA1D000469532 /* Default@2x.png */,
 				B258CE7815DEDF3C0085C9F0 /* Hal Flashlight */,
 				B258CE7115DEDF3C0085C9F0 /* Frameworks */,
@@ -227,6 +230,7 @@
 				B2BE509C15DF315300469532 /* Locking.wav in Resources */,
 				B2BE509E15DF335500469532 /* Carlock.wav in Resources */,
 				B2BE50A015DFA1D000469532 /* Default@2x.png in Resources */,
+				B265617B15DFE4270026087B /* README.rst in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,11 +321,13 @@
 		B258CE8D15DEDF3C0085C9F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lukasz Balcerzak (39GHJFL4SY)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hal Flashlight/Hal Flashlight-Prefix.pch";
 				INFOPLIST_FILE = "Hal Flashlight/Hal Flashlight-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -329,13 +335,14 @@
 		B258CE8E15DEDF3C0085C9F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lukasz Balcerzak (39GHJFL4SY)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hal Flashlight/Hal Flashlight-Prefix.pch";
 				INFOPLIST_FILE = "Hal Flashlight/Hal Flashlight-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "25F8D258-8CEA-42F2-A61D-86556C0AC18C";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

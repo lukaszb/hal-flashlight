@@ -29,6 +29,7 @@
 		B2BE509A15DF2A6B00469532 /* unlock@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE509615DF2A6B00469532 /* unlock@2x~iphone.png */; };
 		B2BE509C15DF315300469532 /* Locking.wav in Resources */ = {isa = PBXBuildFile; fileRef = B2BE509B15DF315200469532 /* Locking.wav */; };
 		B2BE509E15DF335500469532 /* Carlock.wav in Resources */ = {isa = PBXBuildFile; fileRef = B2BE509D15DF335500469532 /* Carlock.wav */; };
+		B2BE50A015DFA1D000469532 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE509F15DFA1D000469532 /* Default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		B2BE509615DF2A6B00469532 /* unlock@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unlock@2x~iphone.png"; sourceTree = "<group>"; };
 		B2BE509B15DF315200469532 /* Locking.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Locking.wav; sourceTree = "<group>"; };
 		B2BE509D15DF335500469532 /* Carlock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Carlock.wav; sourceTree = "<group>"; };
+		B2BE509F15DFA1D000469532 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		B258CE6315DEDF3C0085C9F0 = {
 			isa = PBXGroup;
 			children = (
+				B2BE509F15DFA1D000469532 /* Default@2x.png */,
 				B258CE7815DEDF3C0085C9F0 /* Hal Flashlight */,
 				B258CE7115DEDF3C0085C9F0 /* Frameworks */,
 				B258CE6F15DEDF3C0085C9F0 /* Products */,
@@ -223,6 +226,7 @@
 				B2BE509A15DF2A6B00469532 /* unlock@2x~iphone.png in Resources */,
 				B2BE509C15DF315300469532 /* Locking.wav in Resources */,
 				B2BE509E15DF335500469532 /* Carlock.wav in Resources */,
+				B2BE50A015DFA1D000469532 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +320,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hal Flashlight/Hal Flashlight-Prefix.pch";
 				INFOPLIST_FILE = "Hal Flashlight/Hal Flashlight-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -328,6 +333,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hal Flashlight/Hal Flashlight-Prefix.pch";
 				INFOPLIST_FILE = "Hal Flashlight/Hal Flashlight-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "25F8D258-8CEA-42F2-A61D-86556C0AC18C";
 				WRAPPER_EXTENSION = app;
